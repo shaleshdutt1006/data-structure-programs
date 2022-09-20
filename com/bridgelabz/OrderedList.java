@@ -63,7 +63,6 @@ public class OrderedList {
                 Node nextnode = currnode.next;
                 int temp;
                 for (int j = 0; j < size() - 1; j++) {
-
                     if (currnode.data > nextnode.data) {
                         temp = currnode.data;
                         currnode.data = nextnode.data;
