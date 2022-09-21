@@ -39,6 +39,7 @@ public class BalancedParanthesis {
                     return false;
                 }
             /*
+
             if current element is matching with the top element or peek element pop the top element which
              is in stack means opening braces if not matching then return false
             */
