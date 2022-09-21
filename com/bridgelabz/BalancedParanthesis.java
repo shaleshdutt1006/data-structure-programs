@@ -39,8 +39,8 @@ public class BalancedParanthesis {
                     return false;
                 }
             /*
-            if current element is matching with the top element or peek element if not matching
-            then return false otherwise pop the element using else condition
+            if current element is matching with the top element or the peek element then
+             pop the element from the top using peek using else condition if not matching then return false
             */
                 else if (isMatching(stack.peek(), curr)) {
                     stack.pop();
