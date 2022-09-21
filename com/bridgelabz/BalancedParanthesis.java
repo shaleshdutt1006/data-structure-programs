@@ -21,7 +21,7 @@ public class BalancedParanthesis {
 
     public static boolean isParenthesisMatching(String str) {
 
-        Stack<Character> stack = new Stack<Character>();
+        Stack<Character> stack = new Stack<>();
 
         for (int i = 0; i < str.length(); i++) {
             char curr = str.charAt(i);
@@ -39,8 +39,8 @@ public class BalancedParanthesis {
                     return false;
                 }
             /*
-            if current element is matching with the top element or peek element if not matching
-            then return false otherwise pop the element using else condition
+            if current element is matching with the top element or peek element pop the top element which
+             is in stack means opening braces if not matching then return false
             */
                 else if (isMatching(stack.peek(), curr)) {
                     stack.pop();
